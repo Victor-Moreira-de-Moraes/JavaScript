@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Qual é a sua nacionalidade?</h1>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="verificar" onclick="clicar()">
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function clicar() {
+        var nacio = window.document.querySelector('input#nacionalidade').value.toLowerCase()
+        var resp = window.document.querySelector('div#resposta')
+            resp.innerHTML = '<p>Digite sua nacionalidade</p>'
+    if (nacio == 'brasileiro') {
+        resp.innerHTML += 'Puts, você é Brasileiro kkkkkk! :('
+    } else {
+        resp.innerHTML += 'Parabéns, você é estrangeiro! yeyééééééééé:)'
+    }
+        }
+    </script>
+</body>
+</html>

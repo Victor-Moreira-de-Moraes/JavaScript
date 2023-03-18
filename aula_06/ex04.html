@@ -7,14 +7,14 @@
     <title>Document</title>
     <style>
         body {
-            font: normal 15pt Times;
+            font: normal 15pt Arial;
         }
     </style>
 </head>
 <body>
     <script>
-        var nome = window.prompt('Qual é o seu nome?')
-        document.write(`<h1>Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</h1>`)
+        var nome = prompt('Qual é o seu nome?')
+        document.writeln(`<h1>Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</h1>`)
         document.write(`<p>Seu nome em maiúsculas é ${nome.toUpperCase()}!</p>`)
         document.write(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}!</p>`)
     </script>
